@@ -127,7 +127,7 @@ public class Runner1 {
 
 		view.Playing();
 
-		boolean gameFinished = false;
+		boolean jogoAcabou = false;
 		int number;
 		while (true) {
 
@@ -163,11 +163,11 @@ public class Runner1 {
 
 		if (valida.equals(pecasPlayer1.getAsString())) {
 
-			gameFinished = true;
+			jogoAcabou = true;
 
 		}
 
-		return gameFinished;
+		return jogoAcabou;
 	}
 
 	public static void comprarPecasPlayer1(PecaList pecasPlayer1, PecaList pecas) {
