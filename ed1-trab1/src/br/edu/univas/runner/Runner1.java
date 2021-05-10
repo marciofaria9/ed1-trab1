@@ -10,7 +10,7 @@ import br.edu.univas.vo.View;
 public class Runner1 {
 
 	public static Scanner scanner = new Scanner(System.in);
-	static View view = new View();
+	public static View view = new View();
 
 	public static void main(String[] args) throws InterruptedException {
 
