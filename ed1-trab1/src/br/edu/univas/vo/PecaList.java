@@ -118,7 +118,7 @@ public class PecaList {
 		return null;
 	}
 
-	public boolean move(PecaList lista, Peca peca) {
+	public boolean logicaJogo(PecaList lista, Peca peca) {
 
 		boolean auxiliar = false;
 

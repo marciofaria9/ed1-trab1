@@ -70,7 +70,7 @@ public class Runner1 {
 
 				peca = pecasComputador.getElementAt(number);
 
-				aux = pecasJogadas.move(pecasJogadas, peca);
+				aux = pecasJogadas.logicaJogo(pecasJogadas, peca);
 
 				if (aux == true) {
 
@@ -145,7 +145,7 @@ public class Runner1 {
 		}
 
 		peca = pecasPlayer1.getElementAt(number);
-		boolean aux = pecasJogadas.move(pecasJogadas, peca);
+		boolean aux = pecasJogadas.logicaJogo(pecasJogadas, peca);
 		if (aux == true) {
 			peca = pecasPlayer1.remove(peca.toString());
 		}
