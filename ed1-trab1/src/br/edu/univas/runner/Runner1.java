@@ -48,6 +48,7 @@ public class Runner1 {
 
 	private static boolean jogoComputador(PecaList pecasComputador, PecaList pecasJogadas, PecaList pecas)
 			throws InterruptedException {
+		
 		Thread.currentThread();
 		Thread.sleep(1000);
 
