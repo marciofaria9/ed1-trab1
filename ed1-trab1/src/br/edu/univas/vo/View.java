@@ -44,4 +44,10 @@ public class View {
 		System.out.println("Computador passou a vez");	
 		
 	}
+	public void msgComputadorComprouPeca() {
+		
+		System.out.println("Computador comprou uma peça\n");
+		
+		
+	}
 }

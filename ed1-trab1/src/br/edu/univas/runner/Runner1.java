@@ -20,8 +20,7 @@ public class Runner1 {
 		PecaList pecasJogadas = new PecaList();
 
 		pecas.criaPecas();
-		
-		
+
 		pecas.distribuiPecas(pecasPlayer1, pecas);
 		pecas.distribuiPecas(pecasComputador, pecas);
 		view.Start();
@@ -37,7 +36,7 @@ public class Runner1 {
 				break;
 			}
 
-			fim = jogoComputador(pecasComputador, pecasJogadas);
+			fim = jogoComputador(pecasComputador, pecasJogadas, pecas);
 			if (fim == true) {
 				view.msgPerdeu();
 				break;
@@ -47,7 +46,8 @@ public class Runner1 {
 
 	}
 
-	private static boolean jogoComputador(PecaList pecasComputador, PecaList pecasJogadas) throws InterruptedException {
+	private static boolean jogoComputador(PecaList pecasComputador, PecaList pecasJogadas, PecaList pecas)
+			throws InterruptedException {
 		Thread.currentThread();
 		Thread.sleep(1000);
 
@@ -61,7 +61,7 @@ public class Runner1 {
 		Peca peca;
 
 		int number = 0;
-
+		int contador = 0;
 		while (true) {
 
 			int isValid = pecasComputador.listaAmount(pecasComputador);
@@ -82,9 +82,20 @@ public class Runner1 {
 
 					number += 1;
 				}
+
 			} else {
+
+				if (contador == 0) {
+					comprarPecasComputador(pecasComputador, pecas);
+					view.msgComputadorComprouPeca();
+					contador += 1;
+					continue;
+				} else {
+					contador = 0;
+				}
+
 				view.msgComputadorPassouAVez();
-				
+
 				break;
 
 			}
@@ -126,10 +137,10 @@ public class Runner1 {
 			if (number == 8) {
 				break;
 			}
-			
-			else if (number == 10 ) {
-				
-				comprarPecas(pecasPlayer1, pecas);
+
+			else if (number == 10) {
+
+				comprarPecasPlayer1(pecasPlayer1, pecas);
 				continue;
 			}
 			number -= 1;
@@ -158,14 +169,23 @@ public class Runner1 {
 
 		return gameFinished;
 	}
-	
-	public static void comprarPecas(PecaList pecasPlayer1, PecaList pecas) {
-		
+
+	public static void comprarPecasPlayer1(PecaList pecasPlayer1, PecaList pecas) {
+
 		Peca peca;
 		peca = pecas.getElementAt(0);
 		peca = pecas.remove(peca.toString());
 		pecasPlayer1.insert(peca);
-		
+
+	}
+
+	public static void comprarPecasComputador(PecaList pecasComputador, PecaList pecas) {
+
+		Peca peca;
+		peca = pecas.getElementAt(0);
+		peca = pecas.remove(peca.toString());
+		pecasComputador.insert(peca);
+
 	}
 
 }
