@@ -3,14 +3,16 @@ package br.edu.univas.vo;
 public class View {
 
 	public void Start() {
-
+		
+		System.out.println("___________________________________________________");
 		System.out.println("Dominó");
+		System.out.println("___________________________________________________");
 
 	}
 
 	public void Playing() {
 
-		System.out.println("\nSua vez\n");
+		System.out.println("\nSua vez **********************\n");
 		System.out.println("Sua mão:");
 		System.out.println("Digite o numéro da peça que deseja jogar ou 8 para passar a vez ou 10 para comprar uma Peça ");
 		System.out.println("");
