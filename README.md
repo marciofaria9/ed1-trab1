@@ -11,10 +11,9 @@ O player humano começa a partida com o programa imprimindo na tela suas 7 peça
 
 Para jogar a peça o player deve digitar o número referente a ordem da peça que foi imprimida.
 
-Na vez do computador, o programa verificará se tem uma peça correta para jogar.
+Na vez do computador, o programa verificará se tem uma peça correta para jogar de acordo com o número das extremidades da lista de peças jogadas.
 
-Caso tenha o programa fará sua jogada. Caso não tenha, o programa comprará automaticamente uma peça da lista. Caso seja possível jogar a peça, o programa jogará automaticamente,
-caso não seja possível, o computador passará a vez.
+Caso tenha uma peça com um número igual ao de alguma extremidade da lista de peças jogas,  o programa fará sua jogada. Caso não tenha, o programa comprará automaticamente uma peça da lista. Caso seja possível jogar a peça, o programa jogará automaticamente, caso não seja possível, o computador passará a vez.
 
 A lista de peças jogadas é imprimida na tela após o computador fazer sua jogada.
 
