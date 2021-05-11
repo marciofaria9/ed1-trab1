@@ -16,11 +16,13 @@ Na vez do computador, o programa verificará se tem uma peça correta para jogar
 Caso tenha o programa fará sua jogada. Caso não tenha, o programa comprará automaticamente uma peça da lista. Caso seja possível jogar a peça, o programa jogará automaticamente,
 caso não seja possível, o computador passará a vez.
 
+A lista de peças jogadas é imprimida na tela após o computador fazer sua jogada.
+
 O player volta a jogar. Caso o player não tenha uma peça correta para jogar, ele deverá comprar uma peça da lista de peças digitando 20.
 
 Após comprar a peça ele deverá analisar a peça comprada, e se ela não puder ser jodada, ele deverá digitar 15 para passar a vez.
 
-As peças jogadas são removidas lista de quem jogou e são implementadas na lista de peças jogadas. A lista de peças jogadas é imprimida na tela após o computador fazer sua jogada.
+As peças jogadas são removidas lista de quem jogou e são implementadas na lista de peças jogadas. 
 
 Se o player jogar todas as suas peças primeiro, o programa imprime uma mensagem de vencedor e termina.
 
