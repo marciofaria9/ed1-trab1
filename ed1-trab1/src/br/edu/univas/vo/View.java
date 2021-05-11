@@ -14,7 +14,7 @@ public class View {
 
 		System.out.println("\nSua vez **********************\n");
 		System.out.println("Sua mão:");
-		System.out.println("Digite o numéro da peça que deseja jogar ou 8 para passar a vez ou 10 para comprar uma Peça ");
+		System.out.println("Digite o numéro da peça que deseja jogar ou 15 para passar a vez ou 20 para comprar uma Peça ");
 		System.out.println("");
 	}
 
@@ -43,12 +43,12 @@ public class View {
 	
 	public void msgComputadorPassouAVez() {
 		
-		System.out.println("Computador passou a vez");	
+		System.out.println("Computador passou a vez *******************");	
 		
 	}
 	public void msgComputadorComprouPeca() {
 		
-		System.out.println("Computador comprou uma peça\n");
+		System.out.println("Computador comprou uma peça **********************\n");
 		
 		
 	}

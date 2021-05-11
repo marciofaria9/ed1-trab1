@@ -48,7 +48,7 @@ public class Runner1 {
 
 	private static boolean jogoComputador(PecaList pecasComputador, PecaList pecasJogadas, PecaList pecas)
 			throws InterruptedException {
-		
+
 		Thread.currentThread();
 		Thread.sleep(1000);
 
@@ -76,7 +76,7 @@ public class Runner1 {
 				if (aux == true) {
 
 					peca = pecasComputador.remove(peca.toString());
-
+					contador = 0;
 					break;
 
 				} else {
@@ -135,11 +135,11 @@ public class Runner1 {
 			System.out.println(pecasPlayer1.getAsString());
 			number = readInt();
 
-			if (number == 8) {
+			if (number == 15) {
 				break;
 			}
 
-			else if (number == 10) {
+			else if (number == 20) {
 
 				comprarPecasPlayer1(pecasPlayer1, pecas);
 				continue;
