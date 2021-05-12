@@ -22,12 +22,12 @@ public class Peca {
 
 	public String toString() {
 		
-		return "(" + num1 + "," + num2 + ")";	
+		return "|" + num1 + "|" + num2 + "|";	
 		
 	}
 
 	public String toString2() {
-		return "(" + num2 + "," + num1 + ")";
+		return "|" + num2 + "|" + num1 + "|";
 	}
 
 	

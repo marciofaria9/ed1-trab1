@@ -82,9 +82,9 @@ public class PecaList {
 		PecaNode aux = head;
 		while (aux != null) {
 
-			builder.append("(").append(aux.info.getNum1());
-			builder.append(",");
-			builder.append(aux.info.getNum2()).append(")");
+			builder.append("|").append(aux.info.getNum1());
+			builder.append("|");
+			builder.append(aux.info.getNum2()).append("|");
 			builder.append("  ");
 
 			aux = aux.next;
